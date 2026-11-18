@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My E-Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Tahoma', sans-serif;
+    background: #f4f7fc;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Navbar */
+nav {
+    background: #173b70;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #173b70, #4385c5);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 35px;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    padding: 55px 10%;
+}
+
+.section-title {
+    text-align: center;
+    color: #173b70;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Cards */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #00000012;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #24548c;
+    margin-bottom: 10px;
+}
+
+/* About */
+.about {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Contact */
+.contact {
+    background: #173b70;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #10294e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>MY PORTFOLIO</h2>
+    <ul>
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#about">ประวัติส่วนตัว</a></li>
+        <li><a href="#education">การศึกษา</a></li>
+        <li><a href="#activities">กิจกรรม</a></li>
+        <li><a href="#certificates">เกียรติบัตร</a></li>
+        <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+</nav>
+
+<!-- Home -->
+<header class="hero" id="home">
+    <img class="profile"
+         src="https://placehold.co/300x300?text=Your+Photo"
+         alt="รูปโปรไฟล์">
+    <h1>สวัสดีครับ ผมชื่อ [ธนวัฒน์ วันทา]</h1>
+    <p>ยินดีต้อนรับเข้าสู่เว็บไซต์แฟ้มสะสมผลงานของฉัน</p>
+    <p>Welcome to My E-Portfolio</p>
+</header>
+
+<!-- About -->
+<section id="about">
+    <h2 class="section-title">ประวัติส่วนตัว</h2>
+    <div class="about card">
+        <p><b>ชื่อ-นามสกุล:</b> [ธนวัฒน์ วันทา]</p>
+        <p><b>ชื่อเล่น:</b> [โดม]</p>
+        <p><b>วันเกิด:</b> [26/12/2551]</p>
+        <p><b>อายุ:</b> [18] ปี</p>
+        <p><b>งานอดิเรก:</b> [ดูหนัง]</p>
+        <p><b>ความสามารถพิเศษ:</b> [ห่อลิ้น]</p>
+        <p><b>คติประจำใจ:</b> [ไม่มีอะไรเป็นไปไม่ได้]</p>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+    <h2 class="section-title">ประวัติการศึกษา</h2>
+    <div class="container">
+        <div class="card">
+            <h3>ระดับประถมศึกษา</h3>
+            <p>โรงเรียน [วัดปัญจทายิกาวาส]</p>
+            <p>ปีการศึกษา [2555-2561]</p>
+        </div>
+
+        <div class="card">
+            <h3>ระดับมัธยมศึกษาตอนต้น</h3>
+            <p>โรงเรียน [ธัญรัตน์]</p>
+            <p>ปีการศึกษา [2562-2565]</p>
+        </div>
+
+        <div class="card">
+            <h3>ระดับมัธยมศึกษาตอนปลาย</h3>
+            <p>โรงเรียน [ธัญรัตน์]</p>
+            <p>ปีการศึกษา [2566-2569]</p>
+        </div>
+    </div>
+</section>
+
+<!-- Activities -->
+<section id="activities">
+    <h2 class="section-title">กิจกรรมและผลงาน</h2>
+    <div class="container">
+        <div class="card">
+            <img src="https://placehold.co/400x250?text=Activity+1"
+                 alt="กิจกรรมที่ 1">
+            <h3>กิจกรรมที่ 1</h3>
+            <p>รายละเอียดกิจกรรมและประสบการณ์ที่ได้รับ</p>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/400x250?text=Activity+2"
+                 alt="กิจกรรมที่ 2">
+            <h3>กิจกรรมที่ 2</h3>
+            <p>รายละเอียดกิจกรรมและประสบการณ์ที่ได้รับ</p>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/400x250?text=Activity+3"
+                 alt="กิจกรรมที่ 3">
+            <h3>กิจกรรมที่ 3</h3>
+            <p>รายละเอียดกิจกรรมและประสบการณ์ที่ได้รับ</p>
+        </div>
+    </div>
+</section>
+
+<!-- Certificates -->
+<section id="certificates">
+    <h2 class="section-title">เกียรติบัตร</h2>
+    <div class="container">
+        <div class="card">
+            <img src="https://placehold.co/400x280?text=Certificate+1"
+                 alt="เกียรติบัตรที่ 1">
+            <h3>เกียรติบัตรที่ 1</h3>
+            <p>ชื่อรางวัลหรือหลักสูตรที่ได้รับ</p>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/400x280?text=Certificate+2"
+                 alt="เกียรติบัตรที่ 2">
+            <h3>เกียรติบัตรที่ 2</h3>
+            <p>ชื่อรางวัลหรือหลักสูตรที่ได้รับ</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>ช่องทางการติดต่อ</h2>
+    <p>Email: yourname@email.com</p>
+    <p>Facebook: [ชื่อ Dome Thanawat]</p>
+    <p>Instagram: [ชื่อ dddtnw_26]</p>
+    <p>โทรศัพท์: [092-759-8912]</p>
+</section>
+
+<footer>
+    <p>© 2026 My E-Portfolio | Created by [ชื่อของคุณ]</p>
+</footer>
+
+</body>
+</html>
